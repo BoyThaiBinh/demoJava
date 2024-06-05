@@ -16,6 +16,11 @@ import java.util.Optional;
 @Transactional
 public class CategoryService {
     private final CategoryRepository categoryRepository;
+
+//    public CategoryService(CategoryRepository categoryRepository) {
+//        this.categoryRepository = categoryRepository;
+//    }
+
     /**
      * Retrieve all categories from the database.
      * @return a list of categories

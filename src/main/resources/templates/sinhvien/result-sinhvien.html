@@ -16,6 +16,7 @@
       <th>Tên</th>
       <th>Tuổi</th>
       <th>Khoa</th>
+      <th>Ảnh</th>
     </tr>
     </thead>
     <tbody>
@@ -23,6 +24,7 @@
       <td th:text="${sinhVien.ten}">Tên mặc định</td>
       <td th:text="${sinhVien.tuoi}">Tuổi mặc định</td>
       <td th:text="${sinhVien.khoa}">Khoa mặc định</td>
+      <td><img th:src="@{${sinhVien.image}}" alt="Student Image" style="max-width: 100px; max-height: 100px;" /></td>
     </tr>
     </tbody>
   </table>

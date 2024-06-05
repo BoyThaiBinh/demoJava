@@ -18,6 +18,10 @@ public class CategoryController {
     @Autowired
     private final CategoryService categoryService;
 
+//    public CategoryController(CategoryService categoryService) {
+//        this.categoryService = categoryService;
+//    }
+
     @GetMapping("/categories/add")
     public String showAddForm(Model model) {
         model.addAttribute("category", new Category());

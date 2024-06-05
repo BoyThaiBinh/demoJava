@@ -20,6 +20,13 @@ public class OrderService {
     private OrderDetailRepository orderDetailRepository;
     @Autowired
     private CartService cartService; // Assuming you have a CartService
+
+//    public OrderService(OrderRepository orderRepository, OrderDetailRepository orderDetailRepository, CartService cartService) {
+//        this.orderRepository = orderRepository;
+//        this.orderDetailRepository = orderDetailRepository;
+//        this.cartService = cartService;
+//    }
+
     @Transactional
     public Order createOrder(Order createOrder, List<CartItem> cartItems) {
 //        Order order = new Order();
